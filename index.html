@@ -1,34 +1,53 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ANAGO PORTFOLIO</title>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="sass/style.css">
+    <title>MYPORTFOLIO</title>
 </head>
+
 <body>
-    <nav>
-        グローバルナビ
-        <!-- 画面をスクロールしてもずっと付いてくる -->
-        <!-- レスポンシブで画面サイズにより、ナビはハンバーガーみたいに、小さく表示する -->
-    </nav>
-    <header>
-        大きめの見出し
-        <!-- height高め、今やってるブログアプリ並みに -->
-    </header>
-    <main>
-        <div class="description">
-            このサイトの説明
-        </div>
-        <div class="profile">
-            プロフィール
-        </div>
-        <div class="portfolio">
-            作成したwebサイトと説明
-        </div>
-    </main>
-    <footer>
-        フッター
-    </footer>
+    <div class="container">
+        <header class="header">
+            <div class="header-item">
+                <p class="title">MYPORTFOLIO</p>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main-description">
+                <h1>このサイトの説明</h1>
+                <p>勉強したものをアウトプットするサイト</p>
+            </div>
+            <div class="main-profile">
+                <h1>プロフィール</h1>
+                <p>webサイトが作りたくて、プログラミングを勉強してます！</p>
+                <div class="account">
+                    <ul>
+                        <li><i class="fab fa-github-square"></i><a href="https://github.com/gudanago">GitHub</a></li>
+                        <li><i class="fas fa-graduation-cap" style="color:#4cb10d"></i><a href="https://qiita.com/gudanago">Qiita</a></li>
+                        <li><a class="twitter-timeline" width="380px" height="300px" href="https://twitter.com/gudtanuki"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-portfolio">
+                <h1>作成したもの</h1>
+                <p>作品が出来次第、載せていきます！/p>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-item">
+                <p class="copyright">2019/05</p>
+            </div>
+        </footer>
+    </div>
 </body>
+
 </html>
