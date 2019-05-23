@@ -1,0 +1,48 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #F8F8F8; 
+    div.container {
+        header {
+            padding: 30px;
+            height: 140px;
+            div.header-item{
+                text-align: center;
+                font-size: 40px;
+            }
+        }
+        main{
+            padding: 30px;
+            h1{
+                font-size: 20px;
+            }
+            p{
+                font-size: 15px;
+            }
+            ul{
+                list-style: none;
+                li{
+                    padding-bottom: 5px;
+                }
+            }
+            div.main-description{
+                padding: 10px;
+            }
+            div.main-profile{
+                padding: 10px;
+            }
+            div.main-portfolio{
+                padding: 10px;
+            }
+        }
+        footer{
+            padding: 30px;
+            text-align: center;
+            p.copyright{
+                font-size: 15px;
+            }
+        }
+    }
+}
