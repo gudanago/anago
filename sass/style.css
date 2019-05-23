@@ -1,0 +1,35 @@
+html, body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #F8F8F8; }
+  html div.container header, body div.container header {
+    padding: 30px;
+    height: 140px; }
+    html div.container header div.header-item, body div.container header div.header-item {
+      text-align: center;
+      font-size: 40px; }
+  html div.container main, body div.container main {
+    padding: 30px; }
+    html div.container main h1, body div.container main h1 {
+      font-size: 20px; }
+    html div.container main p, body div.container main p {
+      font-size: 15px; }
+    html div.container main ul, body div.container main ul {
+      list-style: none; }
+      html div.container main ul li, body div.container main ul li {
+        padding-bottom: 5px; }
+    html div.container main div.main-description, body div.container main div.main-description {
+      padding: 10px; }
+    html div.container main div.main-profile, body div.container main div.main-profile {
+      padding: 10px; }
+    html div.container main div.main-portfolio, body div.container main div.main-portfolio {
+      padding: 10px; }
+  html div.container footer, body div.container footer {
+    padding: 30px;
+    text-align: center; }
+    html div.container footer p.copyright, body div.container footer p.copyright {
+      font-size: 15px; }
+
+/*# sourceMappingURL=style.css.map */
