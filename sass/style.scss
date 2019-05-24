@@ -6,6 +6,7 @@ html, body {
     background-color: #F8F8F8; 
     div.container {
         header {
+            background-color: #f8dfdf;
             padding: 30px;
             height: 140px;
             div.header-item{
@@ -14,7 +15,7 @@ html, body {
             }
         }
         main{
-            padding: 30px;
+            padding: 30px 15%;
             h1{
                 font-size: 20px;
             }
@@ -23,25 +24,32 @@ html, body {
             }
             ul{
                 list-style: none;
+                padding: 0;
                 li{
                     padding-bottom: 5px;
                 }
             }
+            hr{
+                height: 3px;
+                background-color: #f8dfdf;
+                border: none;
+            }
             div.main-description{
-                padding: 10px;
+                padding: 10px 20%;
             }
             div.main-profile{
-                padding: 10px;
+                padding: 10px 20%;
             }
             div.main-portfolio{
-                padding: 10px;
+                padding: 10px 20%;
             }
         }
         footer{
-            padding: 30px;
+            background-color: white;
+            padding: 5px 30px;
             text-align: center;
             p.copyright{
-                font-size: 15px;
+                font-size: 10px;
             }
         }
     }
