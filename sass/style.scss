@@ -1,3 +1,20 @@
+// max-widthを変数に入れる
+$mb: 420px; //モバイル
+$tb: 1024px; //タブレット
+
+// $break-pointより小さい画面サイズ
+@mixin max-screen($break-point) {
+    @media (max-width: $break-point) {
+        @content;
+    }
+}
+// min~maxの間の画面サイズ
+@mixin screen($break-point-min, $break-point-max) { 
+    @media screen and (min-width: $break-point-min) and (max-width: $break-point-max) {
+        @content;
+    }
+}
+
 html, body {
     margin: 0px;
     padding: 0px;
@@ -8,19 +25,42 @@ html, body {
         header {
             background-color: #f8dfdf;
             padding: 30px;
+            @include max-screen($mb) {
+                padding: 5px;
+            }
             height: 140px;
             div.header-item{
                 text-align: center;
                 font-size: 40px;
+                @include screen($mb, $tb) {
+                    font-size: 50px;
+                }
+                p{
+                    @include screen($mb, $tb) {
+                        margin: 40px;
+                    }
+                }
             }
         }
         main{
             padding: 30px 15%;
+            @include max-screen($tb) {
+                padding: 30px 10%;
+            }
+            @include max-screen($mb) {
+                padding: 5px;
+            }
             h1{
                 font-size: 20px;
+                @include screen($mb, $tb) {
+                    font-size: 40px;
+                }
             }
             p{
                 font-size: 15px;
+                @include screen($mb, $tb) {
+                    font-size: 20px;
+                }
             }
             ul{
                 list-style: none;
@@ -36,20 +76,44 @@ html, body {
             }
             div.main-description{
                 padding: 10px 20%;
+                @include max-screen($mb) {
+                    padding: 10px 10%;
+                }
+                @include max-screen($tb) {
+                    padding: 20px 50px;
+                }
             }
             div.main-profile{
                 padding: 10px 20%;
+                @include max-screen($mb) {
+                    padding: 10px 10%;
+                }
+                @include max-screen($tb) {
+                    padding: 20px 50px;
+                }
             }
             div.main-portfolio{
                 padding: 10px 20%;
+                @include max-screen($mb) {
+                    padding: 10px 10%;
+                }
+                @include max-screen($tb) {
+                    padding: 20px 50px;
+                }
             }
         }
         footer{
             background-color: white;
             padding: 5px 30px;
             text-align: center;
+            @include screen($mb, $tb) {
+                padding: 10px 30px;
+            }
             p.copyright{
                 font-size: 10px;
+                @include screen($mb, $tb) {
+                    font-size: 20px;
+                }
             }
         }
     }
